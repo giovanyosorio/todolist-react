@@ -12,7 +12,11 @@ function App() {
         <img className='freecodecamp-logo' src={frecodecamplogo} alt="freecodecamp-logo" />
 
       </div>
+      <div className="tareas-lista-principal">
+        <h1>Mis tareas</h1>
 
+
+      </div>
     </div>
   )
 }
