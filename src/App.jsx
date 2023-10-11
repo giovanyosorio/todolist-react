@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='App'>
       <div className='freecodecamp-logo-contenedor'>
-        <img src={frecodecamplogo} alt="logo freecodecamp" />
+        <img className='freecodecamp-logo' src={frecodecamplogo} alt="freecodecamp-logo" />
 
       </div>
 
