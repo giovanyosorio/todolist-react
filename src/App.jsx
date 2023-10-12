@@ -6,7 +6,7 @@ import Tarea from "../src/componentes/Tarea.jsx"
 import "./App.css"
 function App() {
 
-
+  const [task,setTask]=useState("")
   return (
     <div className='aplicacion-tareas'>
       <div className='freecodecamp-logo-contenedor'>
