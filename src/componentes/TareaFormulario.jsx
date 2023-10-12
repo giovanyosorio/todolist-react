@@ -1,5 +1,5 @@
 import React from "react"
-
+import "../stylesheet/TareaFormulario.css"
 function TareaFormulario(props) {
     return(
         <form className="tarea-formulario" >
