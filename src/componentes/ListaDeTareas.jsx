@@ -1,8 +1,14 @@
 import React from "react";
-
-function ListaDeTareas(params) {
+import TareaFormulario from "../componentes/TareaFormulario"
+import "../stylesheet/ListaDeTareas.css"
+function ListaDeTareas() {
     return(
-        <div></div>
+        <>
+            <TareaFormulario/>
+            <div className="tareas-lista-contenedor">
+              LISTA DE TAREAS
+            </div>
+        </>
     )
 }
 export default ListaDeTareas
