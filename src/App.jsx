@@ -16,7 +16,7 @@ function App() {
       </div>
       <div className="tareas-lista-principal">
         <h1>Mis tareas</h1>
-          <Tarea texto="Aprender react"/>
+          <TareaFormulario tarea="tarea"/>
 
 
 
