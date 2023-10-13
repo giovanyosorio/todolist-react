@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import frecodecamplogo from "./imagenes/freecodecamp-logo.png"
-import Tarea from "../src/componentes/Tarea.jsx"
-import TareaFormulario from "../src/componentes/TareaFormulario.jsx"
 
+
+import ListaDeTareas from "../src/componentes/ListaDeTareas.jsx"
 
 import "./App.css"
 function App() {
@@ -16,7 +16,7 @@ function App() {
       </div>
       <div className="tareas-lista-principal">
         <h1>Mis tareas</h1>
-          <TareaFormulario tarea="tarea"/>
+          <ListaDeTareas/>
 
 
 
