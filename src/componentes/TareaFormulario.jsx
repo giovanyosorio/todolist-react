@@ -7,18 +7,24 @@ function TareaFormulario(props) {
     const [input,setInput]=useState("")
 
     const manejarCambio=e=>{
-        console.log("escribiendo...")
+        
+        setInput(e.target.value)
+        console.log(e.target.value  )
     }
 
     const manejarEnvio=e=>{
+        e.preventDefault()
+        console.log("enviandi",e);
         const tareaNueva= {
             id:"12345",
-            texto:"hola"
+            texto:input,
+            completada:false
         }
     }
 
     return(
-        <form className="tarea-formulario" >
+        <form className="tarea-formulario" 
+        onSubmit={manejarEnvio}>
             <input onChange={manejarCambio }
             type="text" className="tarea-input" placeholder="Escribe una tarea" name="texto"/>
                 <button className="tarea-boton">
