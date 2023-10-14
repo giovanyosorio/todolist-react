@@ -14,13 +14,13 @@ function TareaFormulario(props) {
 
     const manejarEnvio=e=>{
         e.preventDefault()
-        console.log("enviandi");
+        //console.log("enviandi");
         const tareaNueva= {
             id:uuidv4(),
             texto:input,
             completada:false
         }
-        //console.log(tareaNueva);
+        console.log(tareaNueva);
         props.onSubmit(tareaNueva)
     }
 
