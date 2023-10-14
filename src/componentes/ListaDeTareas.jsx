@@ -25,6 +25,17 @@ function ListaDeTareas() {
         console.log("eliminando")
     }
 
+    const completarTarea=id=>{
+        console.log("tarea completada");
+        const tareasActualizadas=tareas.map(tarea=>{
+            if(tarea.id===id){
+                tarea.completada=!tarea.completada
+            }
+            return tarea
+        })
+        setTareas(tareasActualizadas)
+        
+    }
     return(
         <>
             <TareaFormulario 
@@ -37,8 +48,10 @@ function ListaDeTareas() {
                     key={tarea.id}
                     id={tarea.id}
                     texto={tarea.texto}
-                       completada={tarea.completada}
-                       eliminarTarea={eliminarTarea}
+                    completada={tarea.completada}
+                    completarTarea={completarTarea}
+                    eliminarTarea={eliminarTarea}
+                       
                     />
                 )
               }
