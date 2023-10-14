@@ -19,6 +19,11 @@ function ListaDeTareas() {
         }
     }
 
+    const eliminarTarea=id=>{
+        const findId=tareas.findIndex(id==tarea.id)
+        console.log("eliminando")
+    }
+
     return(
         <>
             <TareaFormulario 
@@ -26,14 +31,14 @@ function ListaDeTareas() {
             />
             <div className="tareas-lista-contenedor">
               {
-                tareas.map((tarea)=>{
+                tareas.map((tarea)=>
                     <Tarea
                     key={tarea.id}
                     id={tarea.id}
                     texto={tarea.texto}
                        completada={tarea.completada}
                     />
-                })
+                )
               }
             </div>
         </>
